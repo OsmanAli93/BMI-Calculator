@@ -1,0 +1,335 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/img/bg-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.bmi-container {
+    border: 1px solid #ccc;
+    width: 35%;
+    padding: 25px 20px;
+    background: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-block label {
+    flex: 0 0 10%;
+}
+
+.form-block #bmi-units {
+    flex: 0 0 15%;
+    height: 32px;
+}
+
+
+.form-block input[type=number] {
+    flex: 0 0 20%;
+    font-size: 20px;
+    padding: 5px 8px;
+    margin-right: 10px;
+}
+
+.form-block .submitBtn {
+    height: 38px;
+    flex: 0 0 15%;
+    cursor: pointer;
+    background: #1464e3;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+.bmi-formula__container {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.bmi-formula__container span {
+    margin-right: 15px;
+}
+
+.formula-result__container {
+    border: 1px solid #ccc;
+    height: 20vh;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.formula-result__container h2 {
+    margin-bottom: 25px;
+}
+
+.formula-calculation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 10px;
+}
+
+
+.formula-calculation #formula-height {
+    display: inline-block;
+    border-top: 2px solid #ccc;
+    padding-top: 8px;
+
+}
+
+.formula-calculation #formula-weight {
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.bmi-formula__container #formula-result {
+    background: #fff;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+
+.bmi-formula__container #formula-703 {
+    display: none;
+}
+
+.bmi-formula__container #equal {
+    font-weight: 600;
+    font-size: 50px;
+    color: #333;
+    
+}
+
+/* CATERGORIES HEADER */
+
+.bmi-catergories {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+.catergories-header,
+.catergories-items {
+    display: flex;
+}
+
+.catergories-header h3,
+.catergories-items span {
+    flex: 1;
+    padding: 15px;
+    font-size: 20px;
+    
+}
+
+
+.catergories-items span {
+    border-top: 1px solid #ccc;
+    padding: 15px;
+    font-size: 18px;
+}
+ 
+.ember {
+    background: #ffb04b;
+}
+
+.green {
+    background: #80ff80;
+    
+}
+
+.red {
+    background: #ff4040;
+    color: #fff;
+}
+
+
+
+
+
+@media only screen and (min-width: 300px) {
+
+    body {
+        height: 100%;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+
+    #weight-unit, #height-unit {
+        font-size: 12px;
+    }
+
+    .bmi-container {
+        width: 100%;
+        
+    }
+
+    .form-block {
+        flex-wrap: wrap;
+    }
+
+    .form-block label {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+        
+    }
+
+    .form-block #bmi-units {
+        flex: 0 0 100px;
+    }
+
+    .form-block input[type=number] {
+        flex: 0 0 50%;
+        font-size: 14px;
+    
+    }
+
+    .form-block .submitBtn {
+        height: 30px;
+        flex: 0 0 100px;
+        font-size: 12px;
+    }
+
+    .form-block label {
+        font-size: 12px;
+    }
+    
+
+    .bmi-formula__container span {
+        font-size: 14px;
+    }
+
+    .bmi-formula__container #equal {
+        font-size: 25px;
+    }
+
+    .catergories-items span {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .formula-result__container {
+        height: 100%;
+    }
+
+    .catergories-header h3 {
+        font-size: 14px;
+    }
+
+    .formula-result__container {
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    h1, h2 {
+        font-size: 38px;
+    }
+
+    #weight-unit, #height-unit {
+        font-size: 18px;
+    }
+
+    .catergories-items span {
+        padding: 20px;
+        font-size: 24px;
+    }
+
+    .bmi-formula__container span {
+        font-size: 48px;
+    }
+
+    .formula-result__container {
+        padding: 20px;
+    }
+
+    .form-block .submitBtn {
+        height: 58px;
+        font-size: 18px;
+    }
+
+    .form-block label {
+        font-size: 20px;
+    }
+
+    .form-block input[type=number] {
+        font-size: 24px;
+    }
+
+    .form-block #bmi-units {
+        flex: 0 0 200px;
+        font-size: 20px;
+        padding: 5px;
+        height: 48px;
+    }
+
+    .catergories-header h3 {
+        font-size: 24px;
+    }
+
+    
+}
+
+
+@media only screen and (min-width: 1200px) {
+    
+    .bmi-container {
+        flex: 0 0 50%;
+        height: 100%;
+    }
+
+    .catergories-items span {
+        font-size: 18px;
+    }
+
+    .form-block label {
+        flex: 0 0 15%;
+    }
+
+    .form-block input[type=number] {
+        flex: 0 0 100px;
+    }
+
+    .form-block #bmi-units {
+        flex:  0 0 auto;
+    }
+
+    .bmi-formula__container span {
+        font-size: 25px;
+    }
+
+    .formula-result__container h2 {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="bmi-container">
+        <h1>BMI Calculator</h1>
+        <div class="bmi-formula">
+            <form action="#" id="bmi-form" autocomplete="off">
+
+                <div class="form-block">
+                    <label for="bmi-units">Units</label>
+                    <select name="bmi-units" id="bmi-units" required>
+                        <option value="metric">Metric</option>
+                        <option value="imperial">Imperial</option>
+                    </select>
+                </div>
+
+                <div class="form-block">
+                    <label for="weight">Weight</label>
+                    <input type="number" id="weight" required>
+                    <span id="weight-unit">Kg</span>
+                </div>
+
+                <div class="form-block">
+                    <label for="height">Height</label>
+                    <input type="number" id="height" required>
+                    <span id="height-unit">Cm</span>
+                </div>
+                <div class="form-block">
+                    <label></label>
+                    <button type="submit" class="submitBtn">Calculate</button>
+                </div>
+            </form>
+
+            <div class="formula-result__container">
+                <h2><span id="formula-unit">Metric</span> BMI Formula</h2>
+                <div class="bmi-formula__container">
+                    <span>BMI</span>
+                    <span>=</span>
+                    <div class="formula-calculation">
+                        <span id="formula-weight">weight (kg)</span>
+                        <span id="formula-height">[height (m)]<sup>2</sup> </span> 
+                    </div>
+                    <span id="formula-703">x 703</span>
+                    <span id="equal">=</span>
+                    <span id="formula-result">A</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bmi-catergories">
+            <div class="catergories-header">
+                <h3>BMI</h3>
+                <h3>BMI Category</h3>
+            </div>
+            <div class="catergories-body">
+                <div class="catergories-items">
+                    <span>Less Than 15</span>
+                    <span class="ember">Very severely underweight</span>
+                </div>
+                <div class="catergories-items">
+                    <span>Between 15 and 16</span>
+                    <span class="ember">Severely underweight</span>
+                </div>
+                <div class="catergories-items">
+                    <span>Between 16 and 18.5</span>
+                    <span class="ember">Underweight</span>
+                </div>
+                <div class="catergories-items">
+                    <span>Between 18.5 and 25</span>
+                    <span class="green">Normal (healthy weight)</span>
+                </div>
+                <div class="catergories-items">
+                    <span>Between 25 and 30</span>
+                    <span class="ember">Overweight</span>
+                </div>
+                <div class="catergories-items">
+                    <span>Between 30 and 35</span>
+                    <span class="red">Moderately obese</span>
+                </div>
+                <div class="catergories-items">
+                    <span>Between 35 and 40</span>
+                    <span class="red">Severely obese</span>
+                </div>
+                <div class="catergories-items">
+                    <span>Over 40</span>
+                    <span class="red">Very severely obese</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
